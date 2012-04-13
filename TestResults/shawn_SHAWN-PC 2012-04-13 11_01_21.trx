@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8c067a72-b1e4-46a8-9093-54314339373c" name="shawn@SHAWN-PC 2012-04-13 11:01:21" runUser="shawn-PC\shawn" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="d231aa31-7060-47bd-87ca-40e211ac9d53">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="shawn_SHAWN-PC 2012-04-13 11_01_21">
+      <DeploymentItem filename="G:\agile\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-13T11:01:21.2222240+08:00" queuing="2012-04-13T11:01:22.0646254+08:00" start="2012-04-13T11:01:22.1894257+08:00" finish="2012-04-13T11:01:23.0318271+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestFrameScore" storage="g:\agile\bowlinggamescoring\bowlinggamescoringtest\bin\debug\bowlinggamescoringtest.dll" id="5979944a-db84-3a64-8e78-e90d7457d363">
+      <Execution id="3656e2c3-ddf0-48c3-9f52-89c6adf37c2e" />
+      <TestMethod codeBase="G:/agile/bowlingGameScoring/bowlingGameScoringTest/bin/Debug/bowlingGameScoringTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="bowlingGameScoringTest.FrameTest1, bowlingGameScoringTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFrameScore" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5979944a-db84-3a64-8e78-e90d7457d363" executionId="3656e2c3-ddf0-48c3-9f52-89c6adf37c2e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3656e2c3-ddf0-48c3-9f52-89c6adf37c2e" testId="5979944a-db84-3a64-8e78-e90d7457d363" testName="TestFrameScore" computerName="SHAWN-PC" duration="00:00:00.0196006" startTime="2012-04-13T11:01:22.2986259+08:00" endTime="2012-04-13T11:01:22.9538270+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3656e2c3-ddf0-48c3-9f52-89c6adf37c2e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

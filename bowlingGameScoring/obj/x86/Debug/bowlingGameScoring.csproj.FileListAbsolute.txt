@@ -1,0 +1,10 @@
+G:\agile\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.exe
+G:\agile\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.pdb
+G:\agile\bowlingGameScoring\bowlingGameScoring\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\agile\bowlingGameScoring\bowlingGameScoring\obj\x86\Debug\bowlingGameScoring.exe
+G:\agile\bowlingGameScoring\bowlingGameScoring\obj\x86\Debug\bowlingGameScoring.pdb
+G:\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.exe
+G:\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.pdb
+G:\bowlingGameScoring\bowlingGameScoring\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\bowlingGameScoring\bowlingGameScoring\obj\x86\Debug\bowlingGameScoring.exe
+G:\bowlingGameScoring\bowlingGameScoring\obj\x86\Debug\bowlingGameScoring.pdb

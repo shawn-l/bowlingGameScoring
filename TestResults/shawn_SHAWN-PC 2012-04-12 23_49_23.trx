@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ac2b5090-29ac-4982-b30a-d9cbdd00a518" name="shawn@SHAWN-PC 2012-04-12 23:49:23" runUser="shawn-PC\shawn" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="d231aa31-7060-47bd-87ca-40e211ac9d53">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="shawn_SHAWN-PC 2012-04-12 23_49_23">
+      <DeploymentItem filename="G:\agile\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-12T23:49:23.9917319+08:00" queuing="2012-04-12T23:49:24.0307342+08:00" start="2012-04-12T23:49:24.0487352+08:00" finish="2012-04-12T23:49:24.4183555+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="g:\agile\bowlinggamescoring\bowlinggamescoringtest\bin\debug\bowlinggamescoringtest.dll" id="4fa2bdc2-c703-2ef8-d2cb-d7e72c44fa17">
+      <Execution id="a7cdf92c-c6ab-43e0-ae70-4b2bc24d99ec" />
+      <TestMethod codeBase="G:/agile/bowlingGameScoring/bowlingGameScoringTest/bin/Debug/bowlingGameScoringTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="bowlingGameScoringTest.UnitTest1, bowlingGameScoringTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4fa2bdc2-c703-2ef8-d2cb-d7e72c44fa17" executionId="a7cdf92c-c6ab-43e0-ae70-4b2bc24d99ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a7cdf92c-c6ab-43e0-ae70-4b2bc24d99ec" testId="4fa2bdc2-c703-2ef8-d2cb-d7e72c44fa17" testName="TestMethod1" computerName="SHAWN-PC" duration="00:00:00.0180554" startTime="2012-04-12T23:49:24.0597358+08:00" endTime="2012-04-12T23:49:24.4027555+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7cdf92c-c6ab-43e0-ae70-4b2bc24d99ec">
+      <Output>
+        <Exception>调用的目标发生了异常。</Exception>
+        <ErrorInfo>
+          <Message>无法创建类 bowlingGameScoringTest.UnitTest1 的实例。错误: System.NotImplementedException: 未实现该方法或操作。。</Message>
+          <StackTrace>    在 bowlingGameScoring.bowlingGame.roll(Int32 p) 位置 G:\agile\bowlingGameScoring\bowlingGameScoring\bowlingGame.cs:行号 12
+   在 bowlingGameScoringTest.UnitTest1..ctor() 位置 G:\agile\bowlingGameScoring\bowlingGameScoringTest\UnitTest1.cs:行号 23
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
