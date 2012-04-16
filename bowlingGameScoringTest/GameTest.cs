@@ -8,15 +8,16 @@ using bowlingGameScoring;
 namespace bowlingGameScoringTest
 {
     /// <summary>
-    /// UnitTest1 的摘要说明
+    /// GameTest 的摘要说明
     /// </summary>
     [TestClass]
-    public class RoundTest
+    public class GameTest
     {
-        private Scoring scoring;
-        public RoundTest()
+        public GameTest()
         {
-            scoring = new Scoring();
+            //
+            //TODO: 在此处添加构造函数逻辑
+            //
         }
 
         private TestContext testContextInstance;
@@ -60,47 +61,11 @@ namespace bowlingGameScoringTest
         #endregion
 
         [TestMethod]
-        public void TestRoundScore()
+        public void TestGameScore()
         {
-            Assert.AreEqual(0, scoring.Score);
-            Assert.AreEqual(0,scoring.CurrentRound);
+            BowlingGame game = new BowlingGame();
+            game.add(5);
+            Assert.AreEqual(5, game.Score);
         }
-
-        [TestMethod]
-        public void TestRoundAddDownPins()
-        {
-            scoring.AddDownPins(4);
-            scoring.AddDownPins(5);
-            Assert.AreEqual(1, scoring.CurrentRound);
-
-            scoring.AddDownPins(6);
-            scoring.AddDownPins(1);
-            Assert.AreEqual(2, scoring.CurrentRound);
-
-            Assert.AreEqual(9, scoring.getScoringInRound(1));
-            Assert.AreEqual(16, scoring.getScoringInRound(2));
-        }
-
-        [TestMethod]
-        public void TestSpare()
-        {
-            scoring.AddDownPins(4);
-            scoring.AddDownPins(6);
-            scoring.AddDownPins(2);
-            scoring.AddDownPins(3);
-            Assert.AreEqual(12, scoring.getScoringInRound(1));
-            Assert.AreEqual(17, scoring.getScoringInRound(2));
-        }
-
-        [TestMethod]
-        public void TestStrike()
-        {
-            scoring.AddDownPins(10);
-            scoring.AddDownPins(6);
-            scoring.AddDownPins(2);
-            Assert.AreEqual(18, scoring.getScoringInRound(1));
-            Assert.AreEqual(26, scoring.getScoringInRound(2));
-        }
-
     }
 }
