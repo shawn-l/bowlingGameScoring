@@ -13,11 +13,13 @@ namespace bowlingGameScoringTest
     [TestClass]
     public class GameTest
     {
+        private BowlingGame game;
         public GameTest()
         {
             //
             //TODO: 在此处添加构造函数逻辑
             //
+           game = new BowlingGame();
         }
 
         private TestContext testContextInstance;
@@ -63,9 +65,55 @@ namespace bowlingGameScoringTest
         [TestMethod]
         public void TestGameScore()
         {
-            BowlingGame game = new BowlingGame();
-            game.add(5);
-            Assert.AreEqual(5, game.Score);
+            game.AddDownPins(5);
+            game.AddDownPins(1);
+            game.CalculateScoring();
+            Assert.AreEqual(6, game.GetScoringInRound(1));
         }
+       
+          [TestMethod]
+        public void GameIntegrationTest()
+        {
+            game.AddDownPins(1);
+            game.AddDownPins(4);
+
+            game.AddDownPins(4);
+            game.AddDownPins(5);
+
+            game.AddDownPins(6);
+            game.AddDownPins(4);
+
+            game.AddDownPins(5);
+            game.AddDownPins(5);
+
+            game.AddDownPins(10);
+
+            game.AddDownPins(0);
+            game.AddDownPins(1);
+
+            game.AddDownPins(7);
+            game.AddDownPins(3);
+
+            game.AddDownPins(6);
+            game.AddDownPins(4);
+
+            game.AddDownPins(10);
+
+            game.AddDownPins(2);
+            game.AddDownPins(8);
+            game.AddDownPins(6);
+            game.CalculateScoring();
+
+            Assert.AreEqual(5, game.GetScoringInRound(1));
+            Assert.AreEqual(14, game.GetScoringInRound(2));
+            Assert.AreEqual(29, game.GetScoringInRound(3));
+            Assert.AreEqual(49, game.GetScoringInRound(4));
+            Assert.AreEqual(60, game.GetScoringInRound(5));
+            Assert.AreEqual( 61,game.GetScoringInRound(6));
+            Assert.AreEqual(77, game.GetScoringInRound(7));
+            Assert.AreEqual(97, game.GetScoringInRound(8));
+            Assert.AreEqual(117, game.GetScoringInRound(9));
+            Assert.AreEqual(133, game.GetScoringInRound(10));
+          }
     }
 }

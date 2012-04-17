@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7a3d9c21-db35-43ad-837d-c6f6ee3684b3" name="shawn@SHAWNPC 2012-04-17 22:21:24" runUser="shawnPC\shawn" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="d231aa31-7060-47bd-87ca-40e211ac9d53">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment userDeploymentRoot="G:\bowlingGameScoring\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="shawn_SHAWNPC 2012-04-17 22_21_24">
+      <DeploymentItem filename="G:\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-17T22:21:24.9733620+08:00" queuing="2012-04-17T22:21:30.7786941+08:00" start="2012-04-17T22:21:31.0947121+08:00" finish="2012-04-17T22:22:04.0195953+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SHAWNPC" outcome="Error" timestamp="2012-04-17T22:22:04.0155951+08:00">
+        <Text>测试宿主进程意外退出。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestGameScore" storage="g:\bowlinggamescoring\bowlinggamescoringtest\bin\debug\bowlinggamescoringtest.dll" id="c719e108-99f3-9347-daca-1bc4a0e9aa2c">
+      <Execution id="54ed5af0-8305-49f1-ab91-9300159c4948" />
+      <TestMethod codeBase="G:/bowlingGameScoring/bowlingGameScoringTest/bin/Debug/bowlingGameScoringTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="bowlingGameScoringTest.GameTest, bowlingGameScoringTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestGameScore" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c719e108-99f3-9347-daca-1bc4a0e9aa2c" executionId="54ed5af0-8305-49f1-ab91-9300159c4948" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="54ed5af0-8305-49f1-ab91-9300159c4948" testId="c719e108-99f3-9347-daca-1bc4a0e9aa2c" testName="TestGameScore" computerName="SHAWNPC" duration="00:00:32.7188714" startTime="2012-04-17T22:21:31.3007239+08:00" endTime="2012-04-17T22:22:04.0195953+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54ed5af0-8305-49f1-ab91-9300159c4948">
+    </UnitTestResult>
+  </Results>
+</TestRun>

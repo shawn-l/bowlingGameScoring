@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="0d666829-6f55-47f2-a66d-036251b67e9e" name="shawn@SHAWNPC 2012-04-17 21:43:56" runUser="shawnPC\shawn" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="d231aa31-7060-47bd-87ca-40e211ac9d53">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="shawn_SHAWNPC 2012-04-17 21_43_56">
+      <DeploymentItem filename="G:\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-17T21:43:56.5527597+08:00" queuing="2012-04-17T21:43:58.6378790+08:00" start="2012-04-17T21:43:58.7588859+08:00" finish="2012-04-17T21:43:59.7409421+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="IntegrationTest" storage="g:\bowlinggamescoring\bowlinggamescoringtest\bin\debug\bowlinggamescoringtest.dll" id="f52e3bb4-d786-8a79-7cbd-3442db353c41">
+      <Execution id="f71259fa-cfcb-4d6f-aaf6-843f3795599e" />
+      <TestMethod codeBase="G:/bowlingGameScoring/bowlingGameScoringTest/bin/Debug/bowlingGameScoringTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="bowlingGameScoringTest.RoundTest, bowlingGameScoringTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IntegrationTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f52e3bb4-d786-8a79-7cbd-3442db353c41" executionId="f71259fa-cfcb-4d6f-aaf6-843f3795599e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f71259fa-cfcb-4d6f-aaf6-843f3795599e" testId="f52e3bb4-d786-8a79-7cbd-3442db353c41" testName="IntegrationTest" computerName="SHAWNPC" duration="00:00:00.0602895" startTime="2012-04-17T21:43:58.8938936+08:00" endTime="2012-04-17T21:43:59.5809329+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f71259fa-cfcb-4d6f-aaf6-843f3795599e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

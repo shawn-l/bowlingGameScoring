@@ -52,7 +52,7 @@
   <ItemGroup>
     <Compile Include="GameTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RoundTest.cs" />
+    <Compile Include="ScoringTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\bowlingGameScoring\bowlingGameScoring.csproj">

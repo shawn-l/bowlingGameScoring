@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="de7ace54-998e-474b-8b69-cb3e4196d79e" name="shawn@SHAWNPC 2012-04-17 21:44:13" runUser="shawnPC\shawn" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="d231aa31-7060-47bd-87ca-40e211ac9d53">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment userDeploymentRoot="G:\bowlingGameScoring\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="shawn_SHAWNPC 2012-04-17 21_44_13">
+      <DeploymentItem filename="G:\bowlingGameScoring\bowlingGameScoring\bin\Debug\bowlingGameScoring.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-04-17T21:44:13.4847282+08:00" queuing="2012-04-17T21:44:14.6427944+08:00" start="2012-04-17T21:44:14.6897971+08:00" finish="2012-04-17T21:44:15.6368513+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="IntegrationTest" storage="g:\bowlinggamescoring\bowlinggamescoringtest\bin\debug\bowlinggamescoringtest.dll" id="f52e3bb4-d786-8a79-7cbd-3442db353c41">
+      <Execution id="4a1fdf1f-be3e-4293-8b00-7f582e90cc6a" />
+      <TestMethod codeBase="G:/bowlingGameScoring/bowlingGameScoringTest/bin/Debug/bowlingGameScoringTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="bowlingGameScoringTest.RoundTest, bowlingGameScoringTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IntegrationTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f52e3bb4-d786-8a79-7cbd-3442db353c41" executionId="4a1fdf1f-be3e-4293-8b00-7f582e90cc6a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="4a1fdf1f-be3e-4293-8b00-7f582e90cc6a" testId="f52e3bb4-d786-8a79-7cbd-3442db353c41" testName="IntegrationTest" computerName="SHAWNPC" duration="00:00:00.2909744" startTime="2012-04-17T21:44:14.7057980+08:00" endTime="2012-04-17T21:44:15.5258449+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4a1fdf1f-be3e-4293-8b00-7f582e90cc6a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;97&gt;，实际为: &lt;87&gt;。</Message>
+          <StackTrace>   在 bowlingGameScoringTest.RoundTest.IntegrationTest() 位置 G:\bowlingGameScoring\bowlingGameScoringTest\RoundTest.cs:行号 148
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
