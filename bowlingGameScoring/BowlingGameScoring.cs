@@ -7,33 +7,57 @@ namespace bowlingGameScoring
 {
     public class Scoring
     {
-        private int[] rounddata;
-        private int[] roundScoring; 
+        private int[] roundData;
+        private int[] roundScore; 
 
         public Scoring() {
-            roundScoring = new int[11]; 
-            roundScoring[0] = 0;
+            roundScore = new int[11]; 
+            roundScore[0] = 0;
         }
 
-        public void AddRoundData(int[] allrounddata)
+        public void AddRoundData(int[] allRoundData)
         {
-            rounddata = allrounddata;
+            roundData = allRoundData;
         }
 
         public int GetScoringInRound(int round)
         {
-            int roundfirst = round * 2 -  2;
-            int roundsecond = round * 2 - 1;
-            if (rounddata[roundfirst] + rounddata[roundsecond] == 10)
-            {
-                if (rounddata[roundfirst] != 10)
-                    roundScoring[round] = roundScoring[round - 1] + rounddata[roundfirst] + rounddata[roundsecond] + rounddata[roundsecond + 1];
-                else
-                    roundScoring[round] = roundScoring[round - 1] +rounddata[roundfirst] + rounddata[roundsecond] + rounddata[roundsecond + 1] + rounddata[roundsecond + 2];
-            }
+            int firstRoll = round * 2 - 2;
+            int secondRoll = round * 2 - 1;
+
+            if ( isStrike(firstRoll) )
+                GetStrikeScore(round, firstRoll, secondRoll);
+            else if ( isSpare(firstRoll, secondRoll) )
+                GetSpareScore(round, firstRoll, secondRoll);
             else
-                roundScoring[round] =  roundScoring[round - 1] + rounddata[roundfirst] + rounddata[roundsecond];
-            return roundScoring[round];
+                GetScore(round, firstRoll, secondRoll);
+            return roundScore[round];
+        }
+
+        private bool isSpare(int firstRoll, int secondRoll)
+        {
+            return roundData[firstRoll] + roundData[secondRoll] == 10;
+        }
+
+        private bool isStrike(int firstRoll)
+        {
+            return roundData[firstRoll] == 10;
+        }
+
+
+        private void GetScore(int round, int firstRoll, int secondRoll)
+        {
+            roundScore[round] = roundScore[round - 1] + roundData[firstRoll] + roundData[secondRoll];
+        }
+
+        private void GetStrikeScore(int round, int firstRoll, int secondRoll)
+        {
+            roundScore[round] = roundScore[round - 1] + roundData[firstRoll] + roundData[secondRoll] + roundData[secondRoll + 1] + roundData[secondRoll + 2];
+        }
+
+        private void GetSpareScore(int round, int firstRoll, int secondRoll)
+        {
+            roundScore[round] = roundScore[round - 1] + roundData[firstRoll] + roundData[secondRoll] + roundData[secondRoll + 1] ;
         }
     }
 }

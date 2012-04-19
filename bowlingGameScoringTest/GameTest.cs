@@ -65,8 +65,8 @@ namespace bowlingGameScoringTest
         [TestMethod]
         public void TestGameScore()
         {
-            game.AddDownPins(5);
-            game.AddDownPins(1);
+            game.AddOneRollData(5);
+            game.AddOneRollData(1);
             game.CalculateScoring();
             Assert.AreEqual(6, game.GetScoringInRound(1));
         }
@@ -74,34 +74,35 @@ namespace bowlingGameScoringTest
           [TestMethod]
         public void GameIntegrationTest()
         {
-            game.AddDownPins(1);
-            game.AddDownPins(4);
+            game.AddOneRollData(1);
+            game.AddOneRollData(4);
 
-            game.AddDownPins(4);
-            game.AddDownPins(5);
+            game.AddOneRollData(4);
+            game.AddOneRollData(5);
 
-            game.AddDownPins(6);
-            game.AddDownPins(4);
+            game.AddOneRollData(6);
+            game.AddOneRollData(4);
 
-            game.AddDownPins(5);
-            game.AddDownPins(5);
+            game.AddOneRollData(5);
+            game.AddOneRollData(5);
 
-            game.AddDownPins(10);
+            game.AddOneRollData(10);
 
-            game.AddDownPins(0);
-            game.AddDownPins(1);
+            game.AddOneRollData(0);
+            game.AddOneRollData(1);
 
-            game.AddDownPins(7);
-            game.AddDownPins(3);
+            game.AddOneRollData(7);
+            game.AddOneRollData(3);
 
-            game.AddDownPins(6);
-            game.AddDownPins(4);
+            game.AddOneRollData(6);
+            game.AddOneRollData(4);
 
-            game.AddDownPins(10);
+            game.AddOneRollData(10);
 
-            game.AddDownPins(2);
-            game.AddDownPins(8);
-            game.AddDownPins(6);
+            game.AddOneRollData(2);
+            game.AddOneRollData(8);
+            game.AddOneRollData(6);
+
             game.CalculateScoring();
 
             Assert.AreEqual(5, game.GetScoringInRound(1));

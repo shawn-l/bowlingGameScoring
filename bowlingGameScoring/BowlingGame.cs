@@ -8,38 +8,46 @@ namespace bowlingGameScoring
     public class BowlingGame
     {
         private int[] score;
-        private int[] allroundpins;
-        private int currentroll;
+        private int[] allRollsData;
+        private int currentRoll;
         private Scoring scoring;
 
         public BowlingGame() {
-            currentroll = 0;
+            currentRoll = 0;
             score = new int[11];
-            allroundpins = new int[22];
+            allRollsData = new int[22];
             scoring = new Scoring();
         }
 
         public int CurrentRound
         {
-            get { return currentroll / 2; }
+            get { return currentRoll / 2; }
         }
 
-        public void AddDownPins(int pins)
+        public void AddOneRollData(int pins)
         {
-            allroundpins[currentroll++] = pins;
-            if (pins == 10 && currentroll % 2 != 0)
-                allroundpins[currentroll++] = 0;
+            allRollsData[currentRoll++] = pins;
+            if (pins == 10 && currentRoll % 2 != 0)
+                allRollsData[currentRoll++] = 0;
         }
 
         public void CalculateScoring()
         {
-            scoring.AddRoundData(allroundpins);
+            scoring.AddRoundData(allRollsData);
             for(int round=1;round<=10;round++)
                  score[round] = scoring.GetScoringInRound(round);
         }
         public int GetScoringInRound(int round)
         {
             return score[round];
+        }
+
+        public void PrintAllScore()
+        {
+            for (int round = 1; round <= 10; round++)
+            {
+                Console.WriteLine("round {0:D} is {1:D}.", round,GetScoringInRound(round));
+            }
         }
     }
 }

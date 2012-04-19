@@ -81,10 +81,7 @@ namespace bowlingGameScoringTest
             data[1] = 6;
             data[2] = 2;
             data[3] = 3;
-            //scoring.AddDownPins(4);
-            //scoring.AddDownPins(6);
-            //scoring.AddDownPins(2);
-            //scoring.AddDownPins(3);
+
             scoring.AddRoundData(data);
             Assert.AreEqual(12, scoring.GetScoringInRound(1));
             Assert.AreEqual(17, scoring.GetScoringInRound(2));
@@ -101,12 +98,7 @@ namespace bowlingGameScoringTest
             data[4] = 5;
             data[5] = 5;
             data[6] = 1;
-            //scoring.AddDownPins(10);
-            //scoring.AddDownPins(6);
-            //scoring.AddDownPins(2);
-            //scoring.AddDownPins(5);
-            //scoring.AddDownPins(5);
-            //scoring.AddDownPins(1);
+
             scoring.AddRoundData(data);
             Assert.AreEqual(18, scoring.GetScoringInRound(1));
             Assert.AreEqual(26, scoring.GetScoringInRound(2));
@@ -149,34 +141,6 @@ namespace bowlingGameScoringTest
             data[19] = 8;
             data[20] = 6;
 
-            //scoring.AddDownPins(1);
-            //scoring.AddDownPins(4);
-
-            //scoring.AddDownPins(4);
-            //scoring.AddDownPins(5);
-
-            //scoring.AddDownPins(6);
-            //scoring.AddDownPins(4);
-
-            //scoring.AddDownPins(5);
-            //scoring.AddDownPins(5);
-
-            //scoring.AddDownPins(10);
-
-            //scoring.AddDownPins(0);
-            //scoring.AddDownPins(1);
-
-            //scoring.AddDownPins(7);
-            //scoring.AddDownPins(3);
-
-            //scoring.AddDownPins(6);
-            //scoring.AddDownPins(4);
-
-            //scoring.AddDownPins(10);
-
-            //scoring.AddDownPins(2);
-            //scoring.AddDownPins(8);
-            //scoring.AddDownPins(6);
             scoring.AddRoundData(data);
             Assert.AreEqual(5, scoring.GetScoringInRound(1));
             Assert.AreEqual(14, scoring.GetScoringInRound(2));
